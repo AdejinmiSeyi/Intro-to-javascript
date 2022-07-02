@@ -2,7 +2,10 @@
 // let height = 5.6;
 // let country = "Nigeria";
 
+let bioEl = document.getElementById("bio");
+
 function getBiodata(myName, height, country) {
+    
     let biodata;
     biodata = "My name is " +
     myName +
@@ -11,7 +14,9 @@ function getBiodata(myName, height, country) {
     " tall and I am from " +
     country;
 
-    return biodata
+    return biodata;
+    
 }
 let biodata = getBiodata('Seyi', '6ft 2', 'Nigeria');
+bioEl.textContent += biodata;
 console.log(biodata);
